@@ -1,0 +1,80 @@
+.header {
+	&__col {
+		width: 100%;
+		&._logo {
+			max-width: 174px;
+			color: #FFF;
+			text-transform: uppercase;
+			font-size: rem(20);
+			@media screen and (max-width: 768px) {
+				margin-bottom: 10px;
+			}				
+		}
+		&._text {
+			max-width: 590px;
+			color: #FFF;
+			font-size: rem(13);
+			display: flex;
+			justify-content: space-between;
+			@media screen and (max-width: 768px) {
+				display: block;
+			}				
+		}
+		&._free {
+			max-width: 108px;
+		}
+	}
+}
+.header-top {
+	.wrapper {
+		background-color: #239CCF;
+		padding: 6px 27px 6px 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width: 960px) {
+			padding-right: 10px;
+			padding-left: 10px;
+		}			
+		@media screen and (max-width: 768px) {
+			display: block;
+			padding-bottom: 15px;
+		}		
+	}
+}
+.header-text {
+	width: 100%;
+	@media screen and (max-width: 768px) {
+		margin-bottom: 10px;
+	}		
+	&._total {
+		max-width: 120px;
+	}
+	&._cost {
+		max-width: 135px;
+	}
+	&._leave {
+		max-width: 303px;
+	}		
+}
+.header-free {
+	padding: 4px 10px 2px 8px;
+	background-color: #FFF;
+	border-radius: 10px;
+	color: #239CCF;
+	font-size: rem(12);
+}
+.header-bottom {
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		background-color: #FFF;
+		border-bottom: 1px solid #239CCF;
+		position: relative;
+		@media screen and (max-width: 768px) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #F2F2F2;
+		}
+	}
+}

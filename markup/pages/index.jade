@@ -1,0 +1,21 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../components/head/head
+	include ../components/header/header
+	include ../components/menu/menu
+	include ../components/top-banner/top-banner
+	include ../components/workspace/workspace
+	include ../components/share/share
+	include ../components/footer/footer
+
+	head
+		+head(head.defaults)
+	body
+		+header
+		+top-banner
+		+workspace
+		+footer
+		.overlay.jsOverlay
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')
